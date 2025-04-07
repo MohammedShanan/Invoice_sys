@@ -1,0 +1,24 @@
+version:  "3.9"
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: shanan
+      MYSQL_DATABASE: invoicing_db
+      MYSQL_USER: mohammed
+      MYSQL_PASSWORD: shanan
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - invoicing_network
+
+volumes:
+  mysql_data:
+
+networks:
+  invoicing_network:
