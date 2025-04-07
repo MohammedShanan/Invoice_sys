@@ -1,0 +1,18 @@
+.dropdown-menu {
+  max-height: 150px; 
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  width: 400px;
+  z-index: 1000;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
